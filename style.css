@@ -1,0 +1,25 @@
+* {
+    font-family: "Montserrat";
+}
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    color: #979797;
+}
+
+.btn {
+    background-color: yellow;
+    color: white;
+}
+.btn-alt {
+    background-color: white;
+    color: black;
+}
