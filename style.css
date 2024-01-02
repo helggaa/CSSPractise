@@ -4,6 +4,7 @@
 h1 {
     font-weight: 700;
     font-size: 24px;
+    margin: 0 0 16px 0;
 }
 
 a {
@@ -13,13 +14,25 @@ a {
 
 p {
     color: #979797;
+    margin: 0 0 16px 0;
 }
 
 .btn {
     background-color: yellow;
     color: white;
+    padding: 8px 24px;
 }
 .btn-alt {
     background-color: white;
     color: black;
+    margin-right: 16px;
+    border: 2px solid #FFC108;
+}
+
+.landing p {
+    margin-bottom: 32px;
+}
+
+nav > a{
+    margin-left: 12px;
 }
