@@ -1,24 +1,46 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 128px;
+}
+
+#header h1{
+    margin: 0;
+}
+
 * {
     font-family: "Montserrat";
 }
 h1 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 48px;
     margin: 0 0 16px 0;
 }
 
 a {
     text-decoration: none;
     color: black;
+    font-size: 24px;
 }
 
 p {
     color: #979797;
     margin: 0 0 16px 0;
+    font-size: 24px;
+}
+
+section{
+    padding: 64px 128px;
 }
 
 .btn {
-    background-color: yellow;
+    background-color: #FFC108;
     color: white;
     padding: 8px 24px;
 }
@@ -29,10 +51,170 @@ p {
     border: 2px solid #FFC108;
 }
 
-.landing p {
+#landing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+#landing p {
     margin-bottom: 32px;
+}
+#landing > div{
+    width: 50%;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+#about > div{
+    width: 50%;
+}
+
+#about-stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 72px;
+}
+
+.about-stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-stats-item div {
+    width: 50px;
+    height: 10px;
+    background-color: #FFC108;
+    margin-bottom: 16px;
+}
+
+.service-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-detail{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 128px;
+    margin-top: 72px;
+}
+
+.service-detail-item{
+    box-shadow: 1px 2px 2px #979797;
+}
+
+.service-detail-item img{
+    width: 100%;
+
+}
+
+.service-detail-item h2{
+    padding: 0 16px;
+}
+
+.service-detail-item p{
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+.contact-detail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    column-gap: 128px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #FFC108;
+    padding: 64px 32px;
+}
+
+form h1{
+    font-size: 32px;
+    text-align: center;
+}
+
+form button{
+    border: none;
+    margin-top: 12px;
+}
+
+.form-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+    grid-template-areas:    "name subject"
+                            "email phone"
+                            "message message";
+}
+#input-name{
+    grid-area: name;
+}
+#input-subject{
+    grid-area: subject;
+}
+#input-email{
+    grid-area: email;
+}
+#input-phone{
+    grid-area: phone;
+}
+#input-message{
+    grid-area: message;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.input-group input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black ;
+    font-size: 20px;
+}
+
+.input-group label{
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 24px;
 }
 
 nav > a{
     margin-left: 12px;
 }
+
+footer{
+    padding: 16px 128px;
+    background-color: #FFC108;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    width: 50%;
+}
+
+.social-item{
+    display: flex;
+    gap: 32px;
+}
+
